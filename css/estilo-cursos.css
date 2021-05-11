@@ -1,0 +1,389 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+p, b,ul,li{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    height: 85px;
+    background-color: #c4d8da;
+    padding: 0px 50px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.contenedor-logo h1{
+    font-size: 20px;
+    width: 250px;
+    text-transform: uppercase;
+}
+.logo{
+    width:80px;
+    padding: 0px 10px;
+}
+.menu{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    color:black;
+    text-transform: uppercase;
+    font-size: 10pt;
+    height: 82px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    transition:all 0.4s ease;
+}
+.menu a i{
+    margin:0px 5px;
+    font-size: 12px;
+    transition:all 0.4s ease;
+}
+.mostrar-menu,.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition:all 0.4s ease;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover{
+    color: white;
+    border-bottom: 3px solid black;
+    text-shadow: 1px 1px 3px black;
+}
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(252, 252, 252);
+    text-shadow: 1px 1px 3px black;
+}
+#check{
+    display: none;
+}
+/* ///////------- barra lateral redes sociales-----------/////////////// */
+.iconos-social{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    width: 50px;
+ }
+ .iconos-social a{
+    text-decoration: none;
+    
+ }
+ .iconos-social i{
+     color: white; 
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 20px;
+     height: 20px;
+     font-size: 30px;
+     transition: all .5s;
+     
+    
+ }
+ .iconos-social i:hover{
+     padding-right: 3rem;
+     border-radius: 1rem 0 0 1rem;
+     
+    
+ }
+ .fa-facebook{
+     background: #3b5998 ;
+     border-radius: 0 0 0 1rem ;
+    
+ }
+ .fa-twitter{
+     background: #00acee;
+     border-radius: 1rem 0 0 0 ;
+ }
+ .fa-instagram{
+     background: #3f729b;
+     
+ }
+ .fa-youtube{
+     background:  #c4302b;
+ }
+ .fa-whatsapp{
+     background: #00bb2d;
+     
+ }
+/* ----------nuestros cursos 1--------------- */
+.banner{
+    height: 60vh;
+    width: 100%;
+    background: url(../img/nuestros-cursos-banner.jpg)no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-position-y: 35%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.banner h1{
+    font-size: 40pt;
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 8px rgb(46, 46, 46);
+}
+.banner h2{
+    color: white;
+    padding-bottom: 20px;
+}
+/* //////nuestros- cursos 2-----////// */
+.nuestros-cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:30px 0px;
+    height: 100vh;
+}
+.nuestros-cursos h1{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 60px 0px;
+}
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+}
+.imagenes{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagenes img{
+    width: 250px;
+}
+.imagenes h3{
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14pt;
+}
+/* ///////-----------seccion 3: nuestros cursos--------------////////////// */
+/* ----seccion----- */
+.tabla-cursos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.tabla-cursos h1, h2{
+    text-transform: uppercase;
+    font-size: 18pt;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+}
+.tabla-cursos h3{
+    position: absolute;
+    bottom: 0;
+    font-size: 18pt;
+    padding:20px 0px;
+    font-weight: 300;
+}
+/* ------//-----contenedor tabla cursos-------- */
+.contenedor-cursos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:50px 0px;
+    width: 85%;
+}
+.cursos{
+    padding: 10px;
+    background:#c4d8da;
+    height: 200px;
+    margin: 10px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cursos ul{
+    list-style: none;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 300;
+}
+.cursos h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+/* ------Footer------------- */
+footer{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:#c4d8da;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.menu-inicio{
+    display: flex;
+    flex-direction: column;
+}
+.menu-inicio a{
+    text-decoration: none;
+    color:black;
+    line-height: 25pt;
+    font-weight: 500;
+}
+.menu-inicio a:hover{
+    color: white;
+    text-shadow: 1px 1px 3px rgb(43, 43, 43);
+}
+footer img{
+    width: 180px;
+    padding: 15px;
+}
+.politicas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    background:  #c4d8da ;
+}
+.politicas a,p{
+    color: #000000;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 10pt;
+}
+.divisores{
+    box-sizing: border-box;
+    margin: 0;
+    align-self: stretch;
+    margin-left: 8px;
+    margin-right: 8px;
+    opacity: 0.5;
+    background-color: #000000;
+    width: 0.5px;
+}
+/* -----Responsive---- */
+@media(max-width: 1200px){
+  
+    .redes a{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .politicas{
+        width: 100%;
+    }
+    .politicas a, p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .nuestros-cursos{
+        height: auto;
+     
+    }
+    .iconos-social i{
+        padding: 10px;
+        font-size: 20px;
+     }
+}
+@media (max-width: 1000px){
+.mostrar-menu,
+.esconder-menu{
+    display: flex
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(252, 252, 252);
+    border-bottom: none;
+    text-shadow: 1px 1px 3px black;
+}
+header{
+    padding:0px;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background:linear-gradient(to left ,#c4d8da,#e4e4e4,#c4d8da);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+    flex-direction: column;
+}
+.menu a{
+    display: block;
+    padding: 20px;
+    height: auto;
+}
+.esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.contenedor-logo{
+    width: 280px;
+}
+.contenedor-logo h1{
+    visibility: hidden;
+}
+.tabla-cursos{
+    height: auto;
+}
+#check:checked ~ .menu{
+    right: 0;
+    border-bottom: none;
+}
+}
+@media (max-width: 800px){
+    .mostrar-menu,
+    .esconder-menu {
+        border-bottom: none;
+    }  
+}

@@ -1,0 +1,553 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    
+}
+p, b,ul,li{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+header{
+    height: 85px;
+    background-color: #c4d8da;
+    padding: 0px 50px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.contenedor-logo h1{
+    font-size: 20px;
+    width: 250px;
+    text-transform: uppercase;
+}
+.logo{
+    width:80px;
+    padding: 0px 10px;
+}
+.menu{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    color:black;
+    text-transform: uppercase;
+    font-size: 10pt;
+    height: 82px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    transition:all 0.4s ease;
+}
+.menu a i{
+    margin:0px 5px;
+    font-size: 12px;
+    transition:all 0.4s ease;
+}
+.mostrar-menu,.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition:all 0.4s ease;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover{
+    color: white;
+    border-bottom: 3px solid black;
+    text-shadow: 1px 1px 3px black;
+}
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(252, 252, 252);
+    text-shadow: 1px 1px 3px black;
+}
+#check{
+    display: none;
+}
+.iconos-social{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    width: 50px;
+ }
+ .iconos-social a{
+    text-decoration: none;
+    
+ }
+ .iconos-social i{
+     color: white; 
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 20px;
+     height: 20px;
+     font-size: 30px;
+     transition: all .5s;
+     
+    
+ }
+ .iconos-social i:hover{
+     padding-right: 3rem;
+     border-radius: 1rem 0 0 1rem;
+     
+    
+ }
+ .fa-facebook{
+     background: #3b5998 ;
+     border-radius: 0 0 0 1rem ;
+    
+
+ }
+ .fa-twitter{
+     background: #00acee;
+     border-radius: 1rem 0 0 0 ;
+ }
+ .fa-instagram{
+     background: #3f729b;
+     
+ }
+ .fa-youtube{
+     background:  #c4302b;
+ }
+ .fa-whatsapp{
+     background: #00bb2d;
+     
+ }
+/* -----------Banner--------------- */
+.banner{
+    padding: 0 50px;
+    background-image: url(../img/home-1.jpg);
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::before{
+    content: '';
+    background: rgba(190, 190, 190, 0.45);
+    width: 100%;
+    height: 95vh;
+    left: 0;
+    position: absolute;
+    filter: blur(2px);
+}
+.contenido-banner{
+    position: relative;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-banner img{
+    width: 300px;
+    height: 300px;
+    padding: 0px 20px;
+    filter:invert()
+}
+.contenido-banner h3{
+    font-size: 50px;
+    font-weight: 500;
+    padding: 10px 0px;
+    text-align: center;
+    text-shadow:2px 2px 6px rgb(61, 61, 61);
+}
+/* //////home 2////// */
+.home-2{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-2 h1{
+    padding: 40px 0px;
+    font-size: 30px;
+    width: 600px ;
+    min-width: 320px;
+    text-align: center;
+}
+.home-2 p{
+    font-size: 12pt;
+    width: 60vw;
+    text-shadow: none;
+    text-align: center;
+}
+.cuadricula{
+    display: flex;
+    align-items: center;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contenedor-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 400px;
+    padding: 30px;
+}
+.contenedor-info img{
+    width: 250px;
+}
+.contenedor-info a{
+    background-color: #89bbc7;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all .4s ease;
+}
+.contenedor-info a:hover{
+    background-color:#538a97 ;
+}
+.contenedor-info h2{
+    width: 70%;
+    text-align: center;
+}
+/* /////// home 3////// */
+.home-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding-bottom: 40px;
+}
+.columna-1{
+    width: 400px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+.contenedor-ventajas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+.contenedor-ventajas img{
+    width: 300px;
+}
+.contenedor-ventajas h2{
+    text-align: center;
+    padding: 20px 0px;
+}
+.contenedor-ventajas p{
+    text-shadow: none;
+    text-align: justify;
+    font-size: 12pt;
+    color: rgb(85, 85, 85);
+}
+.columna-2{
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.columna-2 ul{
+width: 90%;
+}
+.columna-2 img{
+    width: 400px;
+}
+.columna-2 h2,h3{
+    padding: 20px;
+    text-align: center;
+}
+.columna-2 p{
+    text-shadow: none;
+    font-size: 12pt;
+    width: 90%;
+    text-align: left;
+    color: rgb(85, 85, 85);
+}
+
+/* -//////// seccion Home 4 /////// */
+.testimonios{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(180deg, #c4d8da,#f5f5f5)  ;
+}
+.contenedor-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.casos-clinicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.casos-clinicos h2{
+    font-size: 30px;
+    padding: 30px 0px;
+}
+.contenedor-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    width: 100%;
+}
+.contenedor-2 h2 {
+    font-size: 30px;
+    padding: 30px 0px;
+}
+.videos-curso{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.videos-curso iframe{
+   padding: 25px;
+}
+/* ------Footer------------- */
+footer{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:#c4d8da;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.menu-inicio{
+    display: flex;
+    flex-direction: column;
+}
+.menu-inicio a{
+    text-decoration: none;
+    color:black;
+    line-height: 25pt;
+    font-weight: 500;
+}
+.menu-inicio a:hover{
+    color: white;
+    text-shadow: 1px 1px 3px rgb(43, 43, 43);
+}
+footer img{
+    width: 180px;
+    padding: 15px;
+}
+.certificaciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.certificaciones img{
+    height:40px;
+    width: auto;
+    margin: 15px;
+}
+.politicas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    background:  #c4d8da ;
+}
+.politicas a,p{
+    color: #000000;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 10pt;
+}
+.divisores{
+    box-sizing: border-box;
+    margin: 0;
+    align-self: stretch;
+    margin-left: 8px;
+    margin-right: 8px;
+    opacity: 0.5;
+    background-color: #000000;
+    width: 0.5px;
+}
+/* -----Responsive---- */
+@media(max-width: 1200px){
+   .home-2{
+       height: auto;
+   }
+    .descargas h3{
+        font-size: 14px;
+    }
+    .seccion-app img{
+        width: 120px;
+    }
+    .seccion-app h3{
+        padding-top: 10px;
+    }
+    .redes a{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .politicas{
+        width: 100%;
+    }
+    .politicas a, p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .columna-1{
+        width: 85%;
+    }
+    .home-3{
+        height: auto;
+    }
+    .iconos-social i{
+        padding: 10px;
+        font-size: 20px;
+     }
+}
+@media (max-width: 1000px){
+.mostrar-menu,
+.esconder-menu{
+    display: flex
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(252, 252, 252);
+    border-bottom: none;
+    text-shadow: 1px 1px 3px black;
+}
+header{
+    padding:0px;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background:linear-gradient(to left ,#c4d8da,#e4e4e4,#c4d8da);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+    flex-direction: column;
+}
+.menu a{
+    display: block;
+    padding: 20px;
+    height: auto;
+}
+.esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.contenedor-logo{
+    width: 280px;
+}
+.contenedor-logo h1{
+    visibility: hidden;
+}
+.contenido-banner h3{
+    padding-top: 50px;
+    font-size: 25pt;
+}
+.contenido-banner img{
+    width: 250px;
+    height: auto;
+}
+#check:checked ~ .menu{
+    right: 0;
+    border-bottom: none;
+}
+.banner{
+    width: 1fr;
+}
+.banner::before{
+    width: 1fr;
+}
+.home-2 h1{
+    width: 40%;
+}
+.contenedor-ventajas{
+    padding: 20px 0px;
+}
+.contenedor-ventajas img{
+    width: 200px;
+}
+.columna-2 img{
+    width: 200px;
+}
+.columna-2 h2,p{
+    width: 70%;
+}
+.contenedor-info img {
+    width: 200px;
+}
+.casos-clinicos iframe{
+    width: 352px;
+    height: 199px;
+}
+}
+@media (max-width: 800px){
+    .mostrar-menu,
+    .esconder-menu {
+        border-bottom: none;
+    }
+    
+    .casos-clinicos h2, 
+    .contenedor-2 h2{
+        font-size: 14pt;
+    }
+    .casos-clinicos iframe{
+        width: 246px;
+        height: auto;
+    }
+    .videos-curso iframe{
+        width: 246px;
+        height: auto;
+    }
+    .contenido-banner img{
+        width: 200px;
+        height: auto;
+    }
+}

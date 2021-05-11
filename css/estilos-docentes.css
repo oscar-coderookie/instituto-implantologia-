@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+p, b,ul,li{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+header{
+    height: 85px;
+    background-color: #c4d8da;
+    padding: 0px 50px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.contenedor-logo h1{
+    font-size: 20px;
+    width: 250px;
+    text-transform: uppercase;
+}
+.logo{
+    width:80px;
+    padding: 0px 10px;
+}
+.menu{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    color:black;
+    text-transform: uppercase;
+    font-size: 10pt;
+    height: 82px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    transition:all 0.4s ease;
+}
+.menu a i{
+    margin:0px 5px;
+    font-size: 12px;
+    
+}
+.mostrar-menu,.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover{
+    color: white;
+    border-bottom: 3px solid black;
+    text-shadow: 1px 1px 3px black;
+}
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(252, 252, 252);
+    text-shadow: 1px 1px 3px black;
+}
+#check{
+    display: none;
+}
+.iconos-social{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    width: 50px;
+ }
+ .iconos-social a{
+    text-decoration: none;
+    
+ }
+ .iconos-social i{
+     color: white; 
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 20px;
+     height: 20px;
+     font-size: 30px;
+     transition: all .5s;
+     
+    
+ }
+ .iconos-social i:hover{
+     padding-right: 3rem;
+     border-radius: 1rem 0 0 1rem;
+     
+    
+ }
+ .fa-facebook{
+     background: #3b5998 ;
+     border-radius: 0 0 0 1rem ;
+    
+
+ }
+ .fa-twitter{
+     background: #00acee;
+     border-radius: 1rem 0 0 0 ;
+ }
+ .fa-instagram{
+     background: #3f729b;
+     
+ }
+ .fa-youtube{
+     background:  #c4302b;
+ }
+ .fa-whatsapp{
+     background: #00bb2d;
+     
+ }
+.principal{
+    background-image: url(../img/equipo-docente.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.principal h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    text-shadow:2px 2px 6px rgb(61, 61, 61);
+}
+/* ////---seccion 2 de la pagina-----////// */
+.nuestros-docentes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg , #c4d8da 10%, white 90%, white 90%) ;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+}
+.lista-profesores{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 0px;
+   
+}
+.bloque{
+    width: 70vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bloque img{
+    width:350px;
+}
+.lista-profesores h1,
+.nuestros-docentes h1{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    width: 70%;
+    padding:30px 0px
+}
+.lista-profesores p,
+.nuestros-docentes p{
+    width: 60%;
+    font-size: 12pt;
+    font-weight: 400;
+    padding: 30px 0px;
+    color: rgb(51, 51, 51);
+    text-align: justify;
+}
+.contenedor-grid{
+    width: 70%;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 30px;
+    text-align: center;
+}
+.contenedor-grid > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background: #c4d8da1e;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.247)
+}
+.contenedor-grid img{
+    width: 100%;
+}
+.contenedor-grid h2{
+    font-size: 14pt;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: black;
+    padding: 10px 0px;
+    margin: 5px 0px;
+}
+.contenedor-grid a{
+    background-color: #89bbc7;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all .5 ease;
+    margin: 10px 0px;
+}
+.contenedor-grid a:hover{
+    background-color: #418a9c;
+}
+/* pagina de curriculums */
+.curriculum{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex;
+}
+.slider-container{
+    margin: auto;
+    width: 70%;
+    min-width: 250px;
+    height:90vh;
+    box-shadow: 2px 2px 15px gray;
+    overflow: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+.slider p{
+    font-size: 12pt;
+    text-align: justify;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.slider h1, h3, h4{
+    text-align: center;
+    padding: 5px 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.slider h5{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 12pt;
+    font-weight: 300;
+}
+.slider ul 
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: 175vh;
+      transition: opacity .5s;
+      background:rgb(255, 255, 255);
+  }
+  
+  ul.slider li:first-child {
+      opacity: 0; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu-slider{
+    text-align: center;
+    width: 70%;
+    padding: 20px 0px;
+  }
+  
+  .menu-slider li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu-slider li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #838383;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    font-size: 12pt;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: all .4s ease-in;
+  }
+  /* ----///////footer///////E */
+footer{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:#c4d8da;
+    width: 100%;
+}
+.menu-inicio{
+    display: flex;
+    flex-direction: column;
+}
+.menu-inicio a{
+    text-decoration: none;
+    color:black;
+    line-height: 25pt;
+    font-weight: 500;
+}
+.menu-inicio a:hover{
+    color: white;
+    text-shadow: 1px 1px 3px rgb(43, 43, 43);
+}
+footer img{
+    width: 150px;
+    padding: 15px;
+}
+
+.politicas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    background:  #c4d8da ;
+}
+.politicas a,p{
+    color: #000000;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 10pt;
+}
+.divisores{
+    box-sizing: border-box;
+    margin: 0;
+    align-self: stretch;
+    margin-left: 8px;
+    margin-right: 8px;
+    opacity: 0.5;
+    background-color: #000000;
+    width: 0.5px;
+}
+
+@media(max-width: 1200px){
+   
+     .redes a{
+         font-size: 20px;
+         padding: 10px 10px;
+     }
+     .politicas{
+         width: 100%;
+     }
+     .politicas a, p{
+         font-size: 12px;
+         text-align: center;
+     }
+     .nuestros-docentes{
+        background:linear-gradient(180deg , #c4d8da 10%, white 90%, white 90%)
+     }
+     .bloque{
+         padding:0;
+     }
+     .bloque h1, p{
+         width: 100%;
+     }
+     .bloque img{
+         width: 250px;
+         padding-top: 30px
+     }
+     .menu-slider{
+         width: 100%;
+     }
+     .slider h1, h3, h4 {
+         font-size: 12pt;
+ }
+ .slider p{
+     font-size: 9pt;
+     width: 90%;
+ }
+ .iconos-social i{
+    padding: 10px;
+    font-size: 20px;
+ }
+}
+ @media (max-width: 1000px){
+ .mostrar-menu,
+ .esconder-menu{
+     display: block;
+ }
+ header{
+    padding: 0px;
+    justify-content: space-around;
+    width: 100%;
+ }
+ .menu{
+     position: fixed;
+     width: 100%;
+     height:100%;
+     background:linear-gradient(to left ,#c4d8da,#e4e4e4,#c4d8da);
+     right: -100%;
+     top: 0;
+     text-align: center;
+     padding: 100px 0px;
+     z-index: 100;
+     transition: 0.8s;
+     flex-direction: column;
+ }
+ .menu a{
+     display: block;
+     padding: 20px;
+     font-weight: 400;
+     height: auto;
+ }
+ .menu a:hover{
+    border-bottom: 0;
+ }
+ .esconder-menu{
+     position: absolute;
+     top: 40px;
+     right: 40px;
+ }
+ .contenedor-logo {
+    width: 280px;
+ }
+ .contenedor-logo h1{
+     visibility: hidden;
+ }
+ #check:checked ~ .menu{
+    right: 0;
+    
+}
+ .lista-profesores h1{
+     font-size: 18pt;
+     
+ }
+ .lista-profesores p{
+     font-size: 12pt;
+ }
+ }
+ 
